@@ -8,7 +8,7 @@ html {
     font-family: 'Roboto', sans-serif;
 }
 
-/* header */
+/* nav */
 
 nav {
     max-width: 1500px;
@@ -21,7 +21,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 80%;
+    max-width: 80%;
     height: 100%;
     margin: auto;
 }
@@ -97,4 +97,39 @@ nav {
     .hamburger {
         display: inline-block;
     }
+
+    .nav-container {
+        max-width: 90%;
+    }
+}
+
+
+/* header */
+
+.header-container {
+    max-width: 80%;
+    margin: auto;
+    margin-top: 3em;
+}
+
+.card-container {
+    width: 60%;
+
+    border-radius: 1.4em;
+    background-color: rgb(181, 221, 255);
+    padding: 1.7em 1em;
+    display: flex;
+}
+
+.card-image {
+    width: 200px;
+    margin: 2px solid red;
+}
+
+.card-image img {
+    width: 100%;
+}
+
+.header-text {
+    font-size: .8em;
 }
