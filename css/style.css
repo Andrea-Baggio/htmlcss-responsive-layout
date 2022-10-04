@@ -1,3 +1,5 @@
+/* reset */
+
 * {
     margin: 0;
     padding: 0;
@@ -6,6 +8,10 @@
 
 html {
     font-family: 'Roboto', sans-serif;
+}
+
+button {
+    white-space: nowrap;
 }
 
 /* nav */
@@ -80,7 +86,6 @@ nav {
 }
 
 
-
 @media screen and (max-width: 811px) {
     .nav-logo {
         max-width: 70px;
@@ -103,65 +108,16 @@ nav {
     }
 }
 
+/* main */
 
-/* header */
-
-.header-container {
-    max-width: 80%;
+main {
+    max-width: 1500px;
     margin: auto;
-    margin-top: 3em;
 }
 
-.card-container {
-    width: 60%;
+/* applications */
 
-    border-radius: 1.4em;
-    background-color: rgb(181, 221, 255);
-    display: flex;
-}
+.app-container {
+    border: 2px solid red;
 
-.card {
-    padding: 1.7em 1em;
-    flex: 0 1 50%;
-}
-
-.card-image {
-    width: 170px;
-    margin: 2px solid red;
-    padding-top: 3.5em;
-}
-
-.card-image img {
-    width: 100%;
-    margin-bottom: 0;
-    display: block;
-}
-
-.header-subtitle {
-    color: rgb(0, 132, 253);
-}
-
-.header-text {
-    font-size: .8em;
-    color: rgb(70, 70, 70);
-    line-height: 1.5em;
-    padding: 1.3em 0;
-}
-
-.header-button {
-    margin-top: 1em;
-    color: white;
-    border: 0px;
-    border-radius: 1em;
-    padding: .6em 2.6em;
-    background-color: rgb(0, 132, 253);
-}
-
-.header-button:hover {
-    cursor: pointer;
-    color: rgb(171, 171, 171);
-}
-
-.melamarcia {
-    margin-right: .3em;
 }
