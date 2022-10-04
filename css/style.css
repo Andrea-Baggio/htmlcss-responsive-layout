@@ -249,17 +249,34 @@ main {
     max-width: 1500px;
     background-color: rgb(151, 146, 228);
     margin-top: 5rem;
+    padding: 3rem 0;
 }
 
 .planning-container {
     margin: auto;
     width: 60%;
     display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.planning-left,
+.planning-right {
+    flex-basis: calc((100% / 2) - 2rem);
+}
+
+.planning-right {
+    padding-top: 7rem;
 }
 
 .pl-left-img,
 .pl-right-img {
-    width: 200px;
+    width: 250px;
+}
+
+.pl-right-img {
+    display: flex;
+    flex-direction: column;
 }
 
 .pl-left-img img,
@@ -270,4 +287,45 @@ main {
 .pl-right-img {
     background-color: white;
     border-radius: 1rem;
+    padding: 1.4rem 3rem;
+}
+
+.pl-left-subtitle,
+.pl-left-text {
+    color: white;
+}
+
+.pl-left-subtitle {
+    padding-top: 4rem;
+    padding-bottom: 1rem;
+}
+
+.pl-left-text,
+.pl-right-text {
+    font-size: .7em;
+}
+
+.pl-left-text {
+    padding: 1.5em 0;
+    line-height: 1.5em;
+}
+
+.pl-right-text {
+    font-style: italic;
+    font-weight: bold;
+    padding: 1.5em 0;
+    line-height: 1.5em;
+}
+
+.pl-right-icon {
+    align-self: center;
+    font-size: .8em;
+    background-color: rgb(151, 146, 228);
+    padding: .5rem .7rem;
+    border-radius: 100%;
+}
+
+.pl-right-icon:hover {
+    cursor: pointer;
+    background-color: rgb(147, 144, 189);
 }
