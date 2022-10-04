@@ -45,7 +45,7 @@ nav {
     align-items: center;
     list-style: none;
     gap: 1.5em;
-    font-size: .8em;
+    font-size: 16px;
     height: 100%;
 }
 
@@ -139,7 +139,7 @@ main {
 
 .big-card-text {
     line-height: 1.7em;
-    font-size: .8em;
+    font-size: 16px;
     color: rgb(61, 61, 61);
 }
 
@@ -149,8 +149,10 @@ main {
 }
 
 .big-card-image {
-    flex: 1 1 30%;
+    flex: 1 1 20%;
     padding-top: 3.5em;
+    align-self: flex-end;
+    padding-right: 30px;
 }
 
 .big-card-image img {
@@ -176,25 +178,6 @@ main {
     margin-right: .3em;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .app-card {
     flex-basis: calc((100% - 2em) / 3);
     padding: 1rem;
@@ -205,31 +188,52 @@ main {
 
 .app-subtitle {
     color: rgb(0, 132, 253);
+    padding: 1em 0;
+    white-space: nowrap;
 }
 
 .app-icon {
-    font-size: 3em;
+    font-size: 3.5em;
     color: rgb(0, 132, 253);
 }
 
 .app-text {
     text-align: center;
     line-height: 1.7em;
-    font-size: .8em;
+    font-size: 16px;
     color: rgb(61, 61, 61);
 }
 
 
+@media screen and (max-width: 811px) {
+    .app-container {
+        max-width: 90%;
+    }
+
+    .big-card-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .app-button {
+        margin-top: 2em;
+    }
+
+    .big-card-image {
+        padding-top: 0;
+        padding-left: 1em;
+        width: 250px;
+        align-self: flex-start;
+    }
+}
 
 @media screen and (max-width: 600px) {
     .app-container {
         display: flex;
         flex-direction: column;
     }
-}
 
-@media screen and (max-width: 811px) {
-    .app-container {
-        max-width: 90%;
+    .big-card-image {
+        align-self: center;
     }
 }
