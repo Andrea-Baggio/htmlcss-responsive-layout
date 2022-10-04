@@ -145,11 +145,11 @@ main {
 
 .big-card {
     padding: 1.7em 1em;
-    flex: 0 1 50%;
+    flex: 1 1 40%;
 }
 
 .big-card-image {
-    width: 100px;
+    flex: 1 1 30%;
     padding-top: 3.5em;
 }
 
@@ -198,9 +198,17 @@ main {
 .app-card {
     flex-basis: calc((100% - 2em) / 3);
     padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .app-subtitle {
+    color: rgb(0, 132, 253);
+}
+
+.app-icon {
+    font-size: 3em;
     color: rgb(0, 132, 253);
 }
 
