@@ -118,6 +118,26 @@ main {
 /* applications */
 
 .app-container {
-    border: 2px solid red;
+    max-width: 80%;
+    margin: auto;
+    margin-top: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+}
 
+.app-card,
+.big-card {
+    background-color: rgb(181, 221, 255);
+    border-radius: 2em;
+
+    padding: 1rem;
+}
+
+.big-card {
+    flex-basis: calc(66% - 2em - 1rem);
+}
+
+.app-card {
+    flex-basis: calc((100% / 3) - 2em);
 }
