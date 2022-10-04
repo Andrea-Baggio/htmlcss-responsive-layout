@@ -127,27 +127,35 @@ main {
 }
 
 .app-card,
-.big-card {
+.big-card-container {
     background-color: rgb(181, 221, 255);
-    border-radius: 2em;
-
-    padding: 1rem;
+    border-radius: 1em;
 }
 
-.big-card {
+.big-card-container {
+    display: flex;
     flex-basis: calc(100% - calc((100% - 2em) / 3) - 1em);
 }
 
-.app-card {
-    flex-basis: calc((100% - 2em) / 3);
+.big-card-text {
+    line-height: 1.7em;
+    font-size: .8em;
+    color: rgb(61, 61, 61);
 }
 
-.app-subtitle {
-    color: rgb(0, 132, 253);
+.big-card {
+    padding: 1.7em 1em;
+    flex: 0 1 50%;
 }
 
-.app-text {
-    text-align: center;
+.big-card-image {
+    width: 100px;
+    padding-top: 3.5em;
+}
+
+.big-card-image img {
+    width: 100%;
+    display: block;
 }
 
 .app-button {
@@ -168,9 +176,52 @@ main {
     margin-right: .3em;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.app-card {
+    flex-basis: calc((100% - 2em) / 3);
+    padding: 1rem;
+}
+
+.app-subtitle {
+    color: rgb(0, 132, 253);
+}
+
+.app-text {
+    text-align: center;
+    line-height: 1.7em;
+    font-size: .8em;
+    color: rgb(61, 61, 61);
+}
+
+
+
 @media screen and (max-width: 600px) {
     .app-container {
         display: flex;
         flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 811px) {
+    .app-container {
+        max-width: 90%;
     }
 }
