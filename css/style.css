@@ -135,9 +135,9 @@ main {
 }
 
 .big-card {
-    flex-basis: calc(66% - 2em - 1rem);
+    flex-basis: calc(100% - calc((100% - 2em) / 3) - 1em);
 }
 
 .app-card {
-    flex-basis: calc((100% / 3) - 2em);
+    flex-basis: calc((100% - 2em) / 3);
 }
