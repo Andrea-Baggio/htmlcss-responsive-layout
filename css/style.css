@@ -208,15 +208,17 @@ main {
     color: rgb(61, 61, 61);
 }
 
-
 @media screen and (max-width: 811px) {
     .app-container {
         max-width: 90%;
+        display: flex;
+        justify-content: center;
     }
 
     .big-card-container {
         display: flex;
         flex-direction: column;
+        flex-wrap: nowrap;
     }
 
     .app-button {
@@ -231,7 +233,7 @@ main {
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 650px) {
     .app-container {
         display: flex;
         flex-direction: column;
@@ -328,4 +330,19 @@ main {
 .pl-right-icon:hover {
     cursor: pointer;
     background-color: rgb(147, 144, 189);
+}
+
+@media screen and (max-width: 893px) {
+    .planning-container {
+        margin: auto;
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 2rem;
+    }    
+
+    .planning-right {
+        padding-top: 1rem;
+    }
 }
