@@ -317,6 +317,7 @@ main {
     font-weight: bold;
     padding: 1.5em 0;
     line-height: 1.5em;
+    text-align: center;
 }
 
 .pl-right-icon {
@@ -332,17 +333,17 @@ main {
     background-color: rgb(147, 144, 189);
 }
 
-@media screen and (max-width: 893px) {
+@media screen and (max-width: 887px) {
     .planning-container {
         margin: auto;
         width: 90%;
         display: flex;
         justify-content: center;
-        flex-wrap: wrap;
+        /* flex-wrap: wrap; */
         gap: 2rem;
     }    
 
     .planning-right {
-        padding-top: 1rem;
+        padding-top: 0rem;
     }
 }
